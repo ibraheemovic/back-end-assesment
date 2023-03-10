@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Back End Assessment</title>
+  </head>
+  <body>
+    <body class="container">
+      <div id="buttonDiv">
+        <button id="complimentButton" class="topButton">
+          Get A Compliment
+        </button>
+        <button id="allFortunesButton" class="topButton">
+          Get All Fortunes
+        </button>
+        <button id="randomFortuneButton" class="topButton">
+          Get A Fortune
+        </button>
+      </div>
+      <div id="fortuneDiv">
+        <form id="fortuneForm">
+          <h2 id="fortuneHeader">Add A Fortune</h2>
+          <label for="name" class="formStyle">Enter your name</label>
+          <input id="name" class="formStyle" type="text" placeholder="Name" />
+          <label for="fortune" class="formStyle">Enter your fortune</label>
+          <input
+            id="fortune"
+            class="formStyle"
+            type="text-box"
+            placeholder="Fortune"
+          />
+          <button id="formSubmit">Submit</button>
+        </form>
+      </div>
+
+      <div id="deleteDiv">
+        <form id="deleteForm">
+          <h2 id="deleteHeader">Want To Delete Your Fortunes?</h2>
+          <label for="deleteName" class="formStyle">Enter your name</label>
+          <input
+            id="deleteName"
+            class="formStyle"
+            type="text"
+            placeholder="Name"
+          />
+          <button id="deleteSubmit">Delete</button>
+        </form>
+      </div>
+      <div id="fortuneResponse" class="hiden"></div>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="./index.js"></script>
+    </body>
+  </body>
+</html>
